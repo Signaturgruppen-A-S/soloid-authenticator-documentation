@@ -1,3 +1,7 @@
+# Repo under construction
+Merging in just the docs template and setting up documentation for SoloID Authenticator here.
+Stay tuned and have a nice day :)
+
 # just-the-docs-template
 
 This is a *bare-minimum* template to create a [Jekyll] site that:
