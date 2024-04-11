@@ -1,8 +1,8 @@
-title: SoloID Authenticator documentation
+title: SoloID Authenticator
 description: SoloID Authenticator documentation.
 theme: just-the-docs
 
 url: https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Template Repository: https://github.com/Signaturgruppen-A-S/soloid-authenticator-documentation
