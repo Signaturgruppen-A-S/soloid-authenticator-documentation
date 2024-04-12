@@ -24,7 +24,14 @@ The Swagger API documentation can be found at
 | -------- | ------- |
 | [https://pp.soloid.dk/swagger/index.html](https://pp.soloid.dk/swagger/index.html)  | [https://prod.soloid.dk/swagger/index.html](https://prod.soloid.dk/swagger/index.html) |
 
+### SoloID Authenticator app for PP environment
+Found at 
+
+| Android    | iOS |
+| -------- | ------- |
+| [https://appdistribution.firebase.dev/i/07887ac4154f4cae](https://appdistribution.firebase.dev/i/07887ac4154f4cae)  | [https://testflight.apple.com/join/Vwc72iPI](https://testflight.apple.com/join/Vwc72iPI) |
+
 ## Getting started
 Head over to our online demo, install the SoloID app for PP and/or production and get yourself familiar with the app and the setup. The documentation found here, will provide ressources needed to integrate with the SoloID Authenticator setup.
 
-We have setup an open and free-to-use ["Demo Service Provider"](https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation/demo-service-provider.html) which can be used to start flows and get familiar with the integration. 
+We have setup an open and free-to-use ["Demo Service Provider"](https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation/demo-service-provider.html) which can be used to start flows in the PP environment (and PP app) and get familiar with the integration. 
