@@ -35,3 +35,5 @@ Found at
 Head over to our online demo, install the SoloID app for PP and/or production and get yourself familiar with the app and the setup. The documentation found here, will provide ressources needed to integrate with the SoloID Authenticator setup.
 
 We have setup an open and free-to-use ["Demo Service Provider"](https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation/demo-service-provider.html) which can be used to start flows in the PP environment (and PP app) and get familiar with the integration. 
+
+The [PostMan demo example](https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation/postman-example.html) provides examples of the API integration, which can be paired with the very basic example of the [SoloID Authenticator iframe integration demo](https://raw.githubusercontent.com/Signaturgruppen-A-S/soloid-authenticator-documentation/main/iframe-example/soloid-authenticator-iframe-example.html). 
