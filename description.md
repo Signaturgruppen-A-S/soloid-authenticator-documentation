@@ -1,3 +1,9 @@
+---
+title: Description
+layout: home
+nav_order: 2
+---
+
 # SoloID Authenticator setup description
 The SoloID Authenticator API provides the means to initiate and poll SoloID Authenticator app flows and supports various flow variants suited for different usecases and requirements.
 
