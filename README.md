@@ -1,8 +1,3 @@
-# Documentation website
-https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation
-
-# Repo under construction
-Merging in just the docs template and setting up documentation for SoloID Authenticator here.
-Stay tuned and have a nice day :)
-
+# SoloID Authenticator documentation
+This repository is built as a GitHub Pages documentation website published at [https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation](https://signaturgruppen-a-s.github.io/soloid-authenticator-documentation)
 
