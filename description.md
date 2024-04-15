@@ -46,3 +46,22 @@ Options:
 
 ## Secure OTP codes
 Generate a secure one-time code sent to the specified devices (using device AppID or eID identifiers).
+
+## Initiate flow
+
+### Initiate approve / swipe flow type
+To initiate an approve flow, utilize the flow API endpoint
+```
+POST https://pp.soloid.dk/api/sp/v2/flow
+```
+The flow API endpoint will take the following parameters:
+
+| Parameter      | Description | Default |
+| ----------- | ----------- | ----------- |
+| deviceList      | Specifies one or more devices by AppIDs or by an unique eID identifier       | null |
+| approveFlowType      | One of ["StepUp", "Authenticate"]       | "StepUp" |
+| requestedIdp      | If set, must be a supported IDP like "MitID"       | "None" |
+| approveText      | Text to show user in app. 130 characters length limit.       | null |
+| channelBindingOption      | Specifies channel-binding behavior. One of ["None", "Required"]       | "None" |
+| appSwitchUrlOnCompleted      | Specifies an URL for which the SoloID Authenticator should redirect the user when the flow has completed       | null |
+
