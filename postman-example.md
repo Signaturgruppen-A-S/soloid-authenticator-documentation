@@ -1,15 +1,26 @@
 ---
-title: PostMan demo example
+title: Getting started
 layout: home
-nav_order: 6
+nav_order: 3
 ---
 
-# API Demo PostMan example
+# Getting started
 
-## Getting started 
+## Online demo playground 
 First you need one or more installed and ready SoloID Authenticator (PP) apps installed on either iOS or Android. 
 Start at the [SoloID Authenticator online demo for the PP environment](https://demo-pp.soloid.dk), follow the install instructions and play around with it to get comfortably with the SoloID Authenticator and some of the basic usecases.
 
+## Demo service provider
+The demo service provider is a free-to-use pre-registered SoloID Authenticator service provider usable in the PP environment.
+Utilize the API client to setup and test your first integration to the SoloID Authenticator setup, free of charge and ready to go.
+
+#### API client
+```
+client_id: 545ec4c7-92b0-475f-9aa9-3cb0fef90f0c
+client_secret: qFxHPg6o7arP2nFhFO2c6vj/B1qDqASjfvdlaqGjKsxuOeLLq7sXNbhH3TzOd16E2jRseQkyykmpJtwZEvPBlg==
+```
+
+## PostMan examples
 Then when ready, import the PostMan collection using the [PostMan](https://www.postman.com/) application and follow these steps: 
 
 1) Import the [Demo PostMan collection](https://raw.githubusercontent.com/Signaturgruppen-A-S/soloid-authenticator-documentation/main/postman/SoloID%20API%20PP%20Demo.postman_collection.json).
