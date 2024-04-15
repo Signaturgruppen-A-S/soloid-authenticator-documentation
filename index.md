@@ -3,10 +3,15 @@ title: Introduction
 layout: home
 nav_order: 1
 ---
-> WORK IN PROGRESS - check back later
+
+> **BETA, still under construction**
 
 # Documentation
 SoloID Authenticator is a general purpose multifactor authentiacation app built by Signaturgruppen A/S.
+
+## Changes
+### 15-04-2024
+* Added "Getting to production" page to documentation.
 
 ## Ressources
 
