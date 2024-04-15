@@ -1,7 +1,7 @@
 ---
 title: Description
 layout: home
-nav_order: 2
+nav_order: 5
 ---
 
 # SoloID Authenticator setup description
