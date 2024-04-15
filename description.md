@@ -52,7 +52,7 @@ Generate a secure one-time code sent to the specified devices (using device AppI
 ### Initiate approve / swipe flow type
 To initiate an approve flow, utilize the flow API endpoint
 ```
-POST https://pp.soloid.dk/api/sp/v2/flow
+POST api/sp/v2/flow
 ```
 The flow API endpoint will take the following parameters:
 
@@ -65,3 +65,45 @@ The flow API endpoint will take the following parameters:
 | channelBindingOption      | Specifies channel-binding behavior. One of ["None", "Required"]       | "None" |
 | appSwitchUrlOnCompleted      | Specifies an URL for which the SoloID Authenticator should redirect the user when the flow has completed       | null |
 
+#### Approve text
+The **approveText** parameter is highly recommended to utilize for each SoloID Authenticator flow and will enable the service to present a short and specific context specific text to the approving user, helping to improve user awareness and improve flow security.
+
+#### RequestedIdp
+The **requestedIdp** parameter enables the service to initiate a SoloID Authenticator flow requiring the user to have the specified eID bound to the approving SoloID Authenticator device. On success, return the eID global identifier to the service.
+
+The binding of the requested IDP to the device is handled automatically by the SoloID Authenticator and will only trigger for devices for which no previous binding for the requested IDP has been done. 
+The user will have control on whether to accept the binding and is will be presented with an inline consent when approving to hand-out the specific eID identifier to the requesting service.
+
+#### Channel-binding options
+SoloID Authenticator supports the requirement for channel-binding for approve flows. This requirement will enforce that the approving device either scan a SoloID Authenticator flow QR code with the in-app QR scanner or that the app is initiated with a specific appswitch containing the channel-binding identifier for the flow. This increases the probability that the approving app is near (QR) or on the same device (appswitch) as the browser/app/screen used to display the QR or from which the appswitch was initiated.
+
+### Poll result
+A CORS and JavaScript enabled polling enpoint is available at
+```
+GET /api/sp/v2/poll/[:flowId]
+```
+This will enable to continuously poll the general state of a flow and is also used by the SoloID Authenticator iframe for checking the current flowstate.
+When the flow is completed, the result can be retrieved by your backend calling the flow result API endpoint:
+
+```
+GET api/sp/v2/flow/[:flowId]
+```
+The result will contain the following structure:
+
+```
+{
+  "flowId": "string",
+  "flowState": "Invalid",
+  "appId": "string",
+  "idp": "string",
+  "idpIdentityId": "string"
+}
+```
+
+| Parameter      | Description | In result (Always, Optional) |
+| ----------- | ----------- | ----------- |
+| flowId      | FlowID of flow       | Always |
+| flowState      | [ Invalid, Pending, Approved, Rejected, Expired ]       | Always |
+| appId      | SoloID Authenticator device AppID       | Always |
+| idp      | IDP identifier, if requested       | Optional |
+| idpIdentityId      | IDP ID identifier, if idp is set       | Optional |
