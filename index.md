@@ -12,6 +12,7 @@ SoloID Authenticator is a general purpose multifactor authentiacation app built 
 * Added "Getting to production" page to documentation.
 * Updated description with more details on flow and result
 * Removed the **beta** sign - version 1.0 (still work in progress..)
+* Merged demo service provider and postman markdown files into same "Getting started" page. Restructured page navigation a bit.
 
 ## Ressources
 
