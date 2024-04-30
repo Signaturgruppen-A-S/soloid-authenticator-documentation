@@ -34,6 +34,6 @@ The PostMan examples includes an example that initiates a new SoloID flow withou
 
 The [SoloID Authenticator online demo for the PP environment](https://demo-pp.soloid.dk) demonstrates the usage of the iframe, which is the default behavior for SoloID flows, as this will align the expected UX.
 
-The [quick demo HTML example](https://raw.githubusercontent.com/Signaturgruppen-A-S/soloid-authenticator-documentation/main/iframe-example/soloid-authenticator-iframe-example.html) demonstrates the bare minimum for setting up the SoloID Authenticator iframe. Start a flow and insert the generated flowId into the HTML and run the HTML file in your browser to see it in action. 
+The [quick iframe HTML example](https://raw.githubusercontent.com/Signaturgruppen-A-S/soloid-authenticator-documentation/main/iframe-example/soloid-authenticator-iframe-example.html) demonstrates the bare minimum for setting up the SoloID Authenticator iframe. Start a flow and insert the generated flowId into the HTML and run the HTML file in your browser to see it in action. 
 
 
