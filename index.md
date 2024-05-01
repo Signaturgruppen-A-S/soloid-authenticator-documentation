@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 # Documentation
-SoloID Authenticator is a general purpose multifactor authentiacation app built by Signaturgruppen A/S.
+SoloID Authenticator is a general purpose multifactor authentication app built by Signaturgruppen A/S.
 
 ## Changes
 ### 01-05-2024
