@@ -10,6 +10,14 @@ nav_order: 3
 First you need one or more installed and ready SoloID Authenticator (PP) apps installed on either iOS or Android. 
 Start at the [SoloID Authenticator online demo for the PP environment](https://demo-pp.soloid.dk), follow the install instructions and play around with it to get comfortable with the SoloID Authenticator and some of the basic usecases.
 
+### Demo usecases
+The SoloID Authenticator online demo demonstrates the most basic functionality of the SoloID Authenticator for the most basic usecases and settings.
+
+* Login with QR code or app switch: Start by scanning the QR code or by clicking the app switch button (mobile devices) to login. Here any valid SoloID Authenticator device is usable and the online demo will login the selected device, letting the user see the SoloID Authenticator AppID and try out some of the other usecases.
+* Step-up with push notifications: After a successfull login, the most basic usecase initiates a SoloID Authenticator flow targeting the specific AppID of the logged in device, sending out a push notification and letting the user approve the request by a simple swipe in the SoloID Authenticator app. This flow demonstrates the "1-factor" or "step-up" flow of SoloID Authenticator, which sends out a push notification and allows the user to approve as fluently and fast as posssible. Always showing the sender name and logo and optional a context specific text.
+* Authentication (2-factor): This usecase demonstrates a SoloID flow where the service has requested a full 2-factor authentication with SoloID Authenticator. No push noticications are sent, so the user will have to open the SoloID Authenticator by themselves and upon approval in the app, the user will be prompted for biometric (face, finger, pin) unlock.
+* MitID: This usecase demonstrates a usecase where the requesting service asks for the MitID UUID to be returned as part of the result. If the SoloID Authenticator device does not have a MitID registration bound to the device the user will be prompted to initiate a MitID registration inside the SoloID Authenticator app (only once pr. device, if successfull). Upon approval, the user will always be shown an implicit consent just above the approve slider, showing the user that the MitID UUID will be handed out to the requesting service.
+
 ## Demo service provider
 The demo service provider is a free-to-use pre-registered SoloID Authenticator service provider usable in the PP environment.
 Utilize the API client to setup and test your first integration to the SoloID Authenticator setup, free of charge and ready to go.
