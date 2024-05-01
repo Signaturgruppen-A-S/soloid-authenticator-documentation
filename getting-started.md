@@ -22,11 +22,47 @@ The SoloID Authenticator online demo demonstrates the most basic functionality o
 The demo service provider is a free-to-use pre-registered SoloID Authenticator service provider usable in the PP environment.
 Utilize the API client to setup and test your first integration to the SoloID Authenticator setup, free of charge and ready to go.
 
-#### API client
+### API client
 ```
 client_id: 545ec4c7-92b0-475f-9aa9-3cb0fef90f0c
 client_secret: qFxHPg6o7arP2nFhFO2c6vj/B1qDqASjfvdlaqGjKsxuOeLLq7sXNbhH3TzOd16E2jRseQkyykmpJtwZEvPBlg==
 ```
+
+## Accessing the API
+In order to utilize the SoloID Authenticator API you first need a valid API client (client_id + client_secret). For your first run, try out the demo service provider API client (see above).
+
+All service (provider) APIs described at the Swagger definition page for the SoloID Authenticator API is authorized by standard OAuth2 bearer tokens issued by Signaturgruppen Broker. Start by fetching a bearer token with default 1-hour expiration time from the Signaturgruppen Broker token endpoint with the parameters from the following example request:
+
+HTTP
+```
+POST /op/connect/token HTTP/1.1
+Host: pp.netseidbroker.dk
+Content-Type: application/x-www-form-urlencoded
+Content-Length: xxx
+
+grant_type=client_credentials&scope=privilege_api&client_id=<CLIENT_ID>&client_secret=<CLIENT_SECRET>
+```
+
+cURL
+```
+curl --location 'https://pp.netseidbroker.dk/op/connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'scope=privilege_api' \
+--data-urlencode 'client_id=<CLIENT_ID>' \
+--data-urlencode 'client_secret=<CLIENT_SECRET>'
+```
+
+With the response
+```
+{
+    "access_token": "eyJhb...xUyFop6w",
+    "expires_in": 3600,
+    "token_type": "Bearer",
+    "scope": "privilege_api"
+}
+```
+After retrieval of the bearer token (access_token), use this as a standard bearer authentication header token for all SoloID Authenticator API calls.
 
 ## PostMan examples
 Then when ready, import the PostMan collection using the [PostMan](https://www.postman.com/) application and follow these steps: 
