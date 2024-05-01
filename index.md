@@ -8,6 +8,11 @@ nav_order: 1
 SoloID Authenticator is a general purpose multifactor authentiacation app built by Signaturgruppen A/S.
 
 ## Changes
+### 01-05-2024
+* Added "flow-examples" section
+* reworking existing pages a bit
+* Adding more descriptions and examples to the documentation
+* 
 ### 30-04-2024
 * Added small reference to the **/api/sp/v2/qrAppSwitchUrl** API.
 
