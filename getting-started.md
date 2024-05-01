@@ -31,6 +31,8 @@ client_secret: qFxHPg6o7arP2nFhFO2c6vj/B1qDqASjfvdlaqGjKsxuOeLLq7sXNbhH3TzOd16E2
 ## Accessing the API
 In order to utilize the SoloID Authenticator API you first need a valid API client (client_id + client_secret). For your first run, try out the demo service provider API client (see above).
 
+> Contact Signaturgruppen when ready for a commercial agreement and for setting up your own SoloID Authenticator services.
+
 All service (provider) APIs described at the Swagger definition page for the SoloID Authenticator API is authorized by standard OAuth2 bearer tokens issued by Signaturgruppen Broker. Start by fetching a bearer token with default 1-hour expiration time from the Signaturgruppen Broker token endpoint with the parameters from the following example request:
 
 HTTP
@@ -72,6 +74,8 @@ Then when ready, import the PostMan collection using the [PostMan](https://www.p
 3) Run the "/api/sp/v2/flow appid (specific AppID)" API, specify an AppID from an installed PP SoloID Authenticator app, this will trigger a flow and push message directly to the targeted SoloID Authenticator App
 > **_NOTE:_**  PP App Urls: [Android](https://appdistribution.firebase.dev/i/07887ac4154f4cae) and [iOS](https://testflight.apple.com/join/Vwc72iPI)
 4) Run the "/api/sp/v2/flow/:flowId" API in order to fetch the result from the authentication
+
+These examples showcase how to initiate, poll and fetch the result of the most basic SoloID Authenticator flows and comes wired up with the demo service provider credentials.
 
 ## Pure back-channel vs. iframed SoloID Authenticator flow
 The PostMan examples includes an example that initiates a new SoloID flow without specifying an AppID and thus initiates a flow that is not bound to a specific set of devices. In order for a device to successfully hook into this flow, the device will have to either scan the corresponding SoloID Authenticator QR code or the user will have to click the appswitch button, both dynamically created inside the SoloID Authenticator flow iframe.
