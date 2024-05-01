@@ -30,6 +30,7 @@ client_secret: qFxHPg6o7arP2nFhFO2c6vj/B1qDqASjfvdlaqGjKsxuOeLLq7sXNbhH3TzOd16E2
 
 ## Accessing the API
 In order to utilize the SoloID Authenticator API you first need a valid API client (client_id + client_secret). For your first run, try out the demo service provider API client (see above).
+The client_id is mapped to one specific SoloID Authenticator service (name + logo), so it is the client_id used that decides which SoloID Authenticator service to make requests on behalf of.
 
 > Contact Signaturgruppen when ready for a commercial agreement and for setting up your own SoloID Authenticator services.
 
