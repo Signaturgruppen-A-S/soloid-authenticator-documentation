@@ -8,7 +8,7 @@ nav_order: 3
 
 ## Online demo playground 
 First you need one or more installed and ready SoloID Authenticator (PP) apps installed on either iOS or Android. 
-Start at the [SoloID Authenticator online demo for the PP environment](https://demo-pp.soloid.dk), follow the install instructions and play around with it to get comfortably with the SoloID Authenticator and some of the basic usecases.
+Start at the [SoloID Authenticator online demo for the PP environment](https://demo-pp.soloid.dk), follow the install instructions and play around with it to get comfortable with the SoloID Authenticator and some of the basic usecases.
 
 ## Demo service provider
 The demo service provider is a free-to-use pre-registered SoloID Authenticator service provider usable in the PP environment.
