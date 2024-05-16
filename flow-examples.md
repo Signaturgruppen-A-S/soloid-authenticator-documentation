@@ -11,6 +11,18 @@ To initiate an approve flow, utilize the flow API endpoint
 ```
 POST api/sp/v2/flow
 ```
+
+Here as cURL towards the PP environment
+```
+curl --location 'https://pp.soloid.dk/api/sp/v2/flow' \
+--header 'Content-Type: application/json' \
+--header 'Accept: text/plain' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjA...VB8szDy5V3H8usgIqDUHVBOeHh232Xn5PAAVQXJZ35qPJNg' \
+--data '{
+    "approveText": "Approve flow 😉"
+}'
+```
+
 The flow API endpoint will take the following parameters:
 
 | Parameter      | Description | Default |
@@ -44,18 +56,46 @@ A CORS and JavaScript enabled polling enpoint is available at
 ```
 GET /api/sp/v2/poll/[:flowId]
 ```
+
+As cURL example towards PP
+```
+curl --location 'https://pp.soloid.dk/api/sp/v2/poll/<string>' \
+--header 'Accept: text/plain' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsIm...8szDy5V3H8usgIqDUHVBOeHh232Xn5PAAVQXJZ35qPJNg' \
+```
+
 This will enable to continuously poll the general state of a flow and is also used by the SoloID Authenticator iframe for checking the current flowstate.
+
+The poll endpoint returns a result on the form
+```
+{
+  "flowState": "Pending"
+}
+```
+Where **flowState** is one of
+```
+[ Invalid, Pending, Approved, Rejected, Expired ]
+```
+
 When the flow is completed, the result can be retrieved by your backend calling the flow result API endpoint:
 
 ```
 GET api/sp/v2/flow/[:flowId]
 ```
+
+As cURL towards PP
+```
+curl --location 'https://pp.soloid.dk/api/sp/v2/flow/<string>' \
+--header 'Accept: text/plain' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIs...uCV9qVB8szDy5V3H8usgIqDUHVBOeHh232Xn5PAAVQXJZ35qPJNg' \
+```
+
 The result will contain the following structure:
 
 ```
 {
   "flowId": "string",
-  "flowState": "Invalid",
+  "flowState": flowState,
   "appId": "string",
   "idp": "string",
   "idpIdentityId": "string"
