@@ -8,9 +8,9 @@ nav_order: 5
 The SoloID Authenticator API provides the means to initiate and poll SoloID Authenticator app flows and supports various flow variants suited for different usecases and requirements.
 
 ## Setup architecture
-The SoloID Authenticator setup consists of a backend infrastructure and the iOS and Android SoloID Authenticator apps.
-The backend is hosted in a highly secure and available two datacenter setup shared with the Signaturgruppen Broker (MitID) and undergoes continuous security and audit certifications and monitoring to ensure compliance and SLA that lives up to the requirements for national security standards. 
-The app is built from the ground up with the focus to support various authentication models and usecases required to meet security requirements for the same national standards (such as NIST and the danish NSIS).
+The SoloID Authenticator setup comprises a robust backend infrastructure and dedicated iOS and Android SoloID Authenticator apps. The backend is hosted within a highly secure, dual-datacenter configuration shared with the Signaturgruppen Broker (MitID). This setup undergoes continuous security audits, certifications, and monitoring to ensure compliance with national security standards and service level agreements (SLAs).
+
+The SoloID Authenticator app is meticulously engineered to support various authentication models and use cases, meeting stringent security requirements such as those outlined by NIST and the Danish NSIS.
 
 ## Flow types and features
 The SoloID Authenticator supports the following flowtypes
