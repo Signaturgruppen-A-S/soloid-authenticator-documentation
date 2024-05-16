@@ -59,7 +59,7 @@ GET /api/sp/v2/poll/[:flowId]
 
 As cURL example towards PP
 ```
-curl --location 'https://pp.soloid.dk/api/sp/v2/poll/<string>' \
+curl --location 'https://pp.soloid.dk/api/sp/v2/poll/<flowId>' \
 --header 'Accept: text/plain' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsIm...8szDy5V3H8usgIqDUHVBOeHh232Xn5PAAVQXJZ35qPJNg' \
 ```
@@ -85,7 +85,7 @@ GET api/sp/v2/flow/[:flowId]
 
 As cURL towards PP
 ```
-curl --location 'https://pp.soloid.dk/api/sp/v2/flow/<string>' \
+curl --location 'https://pp.soloid.dk/api/sp/v2/flow/<flowId>' \
 --header 'Accept: text/plain' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIs...uCV9qVB8szDy5V3H8usgIqDUHVBOeHh232Xn5PAAVQXJZ35qPJNg' \
 ```
