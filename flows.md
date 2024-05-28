@@ -1,13 +1,28 @@
 ---
-title: Flow examples
+title: Flow types
 layout: home
 nav_order: 7
 ---
 
-# Flow examples
+# Flow Types
+The SoloID Authenticator app support two primary flow types
+* Approve flow
+* Secure one-time password (OTP)
 
-## Initiate approve / swipe flow type
+Each flow supports various security related options
+* Authentication strength
+* Registration strength
+* Secure context message to end users
+* Push notifications
+* Channel binding for security and ease of use
+* Device list restriction
+* National eID usage (e.g. danish MitID)
+* Appswitch flexibility and usage
+
+## Approve flow
+
 To initiate an approve flow, utilize the flow API endpoint
+
 ```
 POST api/sp/v2/flow
 ```
@@ -110,8 +125,8 @@ The result will contain the following structure:
 | idp      | IDP identifier, if requested       | Optional |
 | idpIdentityId      | IDP ID identifier, if idp is set       | Optional |
 
-## Secure one-time code (OTP)
-SoloID Authenticator supports sending secure and randomly generated one-time codes (OTP) to target devices. 
+## Secure one-time password (OTP)
+SoloID Authenticator supports sending secure and randomly generated one-time password (OTP) to target devices. 
 
 Initiate the flow by calling the following API
 
