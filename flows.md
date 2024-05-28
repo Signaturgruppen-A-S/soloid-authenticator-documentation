@@ -22,7 +22,10 @@ Each flow supports various security related options
 
 
 ## Table of contents
-{: .no_toc .text-delta }
+{:toc}
+<ol>
+    {:toc}
+</ol>
 
 ## Approve flow
 
