@@ -5,9 +5,30 @@ nav_order: 1
 parent: Flow types
 ---
 
-## Approve flow
+# Approve flow
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+- TOC
+{:toc}
+
+## Overview
+The basic and most dynamic flows consists of the swipe/approve flows where an authentication request is displayed in the SoloID Authenticator app with the name and logo of the requesting service alongside an optionally text bound to the flow. 
+The user can then either approve by swiping the approve button slider in the bottom of the app, or reject the flow.
+
+Options:
+* Push notifications: It is possible to trigger push notifications when starting a flow to targeted devices.
+* Channel-binding: Require the approving device to scan a generated QR code or transfer the generated code using appswitch (same device) - automatically supported when using the iframe setup.
+* Choice of authentication strength: one or two factor (NIST AAL level 1 or 2, NSIS level low and substantial). Two factor triggers requirement for biometric approval.
+* Request and require eID binding to device: Dynamically handled by app and backend for users.
+* eID flow: Option to force an eID approval, i.e. trigger flow from app that starts a secure eID flow handled by the SoloID Authenticator app and backend.
+* Appswitch options: Options for controlling and specifying appswitch behavior for better UX.
 
 To initiate an approve flow, utilize the flow API endpoint
+
+## API integration
 
 ```
 POST api/sp/v2/flow
