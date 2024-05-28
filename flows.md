@@ -20,6 +20,11 @@ Each flow supports various security related options
 * National eID usage (e.g. danish MitID)
 * Appswitch flexibility and usage
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Approve flow
 
