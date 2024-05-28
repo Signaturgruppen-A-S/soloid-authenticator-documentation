@@ -21,12 +21,6 @@ Each flow supports various security related options
 * Appswitch flexibility and usage
 
 
-## Table of contents
-{:toc}
-<ol>
-    {:toc}
-</ol>
-
 ## Approve flow
 
 To initiate an approve flow, utilize the flow API endpoint
