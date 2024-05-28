@@ -19,5 +19,9 @@ For both modes of operation a unique AppID is generated pr. app-instance, which 
 
 ## Shared Mode
 
-<img src="images/shared_mode1.jpg" alt="Shared Mode" width="250">
+<div>
+  <img src="images/shared_mode1.jpg" alt="Shared Mode" width="250">
+  <img src="images/shared_mode3.jpg" alt="Shared Mode" width="250">
+  <img src="images/shared_mode2.jpg" alt="Shared Mode" width="250">
+</div>
 
