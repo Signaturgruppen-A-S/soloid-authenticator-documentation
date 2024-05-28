@@ -6,6 +6,13 @@ nav_order: 7
 
 # Flow Types
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+## Overview
 The SoloID Authenticator app support two primary flow types
 * Approve flow
 * Secure one-time password (OTP)
@@ -19,12 +26,6 @@ Each flow supports various security related options
 * Device list restriction
 * National eID usage (e.g. danish MitID)
 * Appswitch flexibility and usage
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ## Approve flow
 
