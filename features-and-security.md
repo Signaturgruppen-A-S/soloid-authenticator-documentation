@@ -8,7 +8,10 @@ nav_order: 5
 {: .no_toc }
 
 The SoloID Authenticator is a general purpose multifactor authentication app targeting iOS and Android, with additional specialized functionality built around the provided functionality of the Signaturgruppen Broker with support for strong eIDs such as, but not limited to, MitID.
-The SoloID Authenticator app and backend setup is built and designed to be audited and used as part of setups under strict security audits, including the danish NSIS and the european GDPR.
+
+The SoloID Authenticator setup comprises a robust backend infrastructure and dedicated iOS and Android SoloID Authenticator apps. The backend is hosted within a highly secure, dual-datacenter configuration shared with the Signaturgruppen Broker (MitID). This setup undergoes continuous security audits, certifications, and monitoring to ensure compliance with national security standards and service level agreements (SLAs).
+
+The SoloID Authenticator app is meticulously engineered to support various authentication models and use cases, meeting stringent security requirements such as those outlined by NIST and the Danish NSIS.
 
 ## Table of contents
 {: .no_toc .text-delta }
