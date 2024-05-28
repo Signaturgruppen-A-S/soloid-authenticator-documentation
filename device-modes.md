@@ -5,10 +5,12 @@ nav_order: 6
 ---
 
 # Device modes
+{: .no_toc }
 
 SoloID Authenticator supports two modes of operation
-* Standard (default)
-* Shared
+
+- TOC
+{:toc}
 
 ## Standard Mode
 The default behavior is to allow the user to utilize the Android or iOS built-in lockscreen to safeguard a hardware backed cryptographic key used by SoloID Authenticator. 
