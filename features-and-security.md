@@ -17,13 +17,17 @@ The SoloID Authenticator app and backend setup is built and designed to be audit
 {:toc}
 
 ## Features
-* Step-up single factor
-* Authentication two factor
-* Back-channel initiated OpenID Connect flows using Signaturgruppen Broker
+* Step-up single factor (approve flow)
+* Authentication two factor (approve flow)
 * OTP one-time-password
+* Back-channel initiated OpenID Connect flows using Signaturgruppen Broker
+* Secure context message to end users
 * Channel binding
 * Push notications
 * Shared device multiuser mode
+* National eID usage (e.g. danish MitID)
+* Appswitch flexibility and usage
+* Device list restriction
 
 ## Security measures
 
