@@ -1,5 +1,5 @@
 ---
-title: Environments
+title: Resources
 layout: home
 nav_order: 4
 ---
