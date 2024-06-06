@@ -18,7 +18,7 @@ The default behavior is to allow the user to utilize the Android or iOS built-in
 In this setting, the personal lockscreen of the Android or iOS device is utilized to secure the SoloID Authenticator.
 
 <div>
-  <img src="images/face_id.jpg" alt="Shared Mode" width="250">
+  <img src="images/soloid_main_1.jpg" alt="Standard Mode" width="250">
 </div>
 
 ## Shared Mode
