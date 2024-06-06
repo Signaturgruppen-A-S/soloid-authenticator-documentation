@@ -15,5 +15,12 @@ SoloID Authenticator is a general purpose multifactor authentication app built b
 * Support for national eID bindings like the Danish MitID
 * Easy, open and free to integrate to the SoloID Authenticator in our test environment (PP)
 
-![](images/soloid_main_1.jpg)
-![](images/soloid_approve_1.jpg)
+### SoloID Authenticator look
+
+<div>
+  <p>
+    <img style="padding-right:10px" width="25%" src="images/soloid_main_1.jpg"/>
+    <img style="padding-right:10px" width="25%" src="images/soloid_approve_1.jpg"/>
+    <img width="25%" src="images/soloid_otp_1.jpg"/>
+  </p>
+</div>
