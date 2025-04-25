@@ -1,7 +1,7 @@
 ---
 title: UX behavior
 layout: home
-nav_order: 12
+nav_order: 30
 ---
 
 ## UX and app behavior
