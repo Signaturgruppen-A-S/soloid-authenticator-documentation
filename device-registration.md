@@ -1,7 +1,7 @@
 ---
 title: Device registration
 layout: home
-nav_order: 9
+nav_order: 15
 ---
 
 # Device registration
